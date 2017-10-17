@@ -1,0 +1,52 @@
+<%= form_with(model: contact, local: true) do |form| %>
+     <div class="row center">
+
+        <div class="col s6 center">
+
+         <div class="row  col s12" >
+
+          <form>
+
+           <div class="row">
+
+             <div class="input-field col s12">
+
+               <%= form.label :name %>
+               <%= form.text_field :name, id: :contact_name %>
+             </div>
+
+           </div>
+
+           <div class="row">
+
+             <div class="input-field col s6">
+              <%= form.label :email %>
+              <%= form.text_field :email, id: :contact_email %>
+            </div>
+
+             <div class="input-field col s6">
+               <%= form.label :phone %>
+               <%= form.text_field :phone, id: :contact_phone %>
+             </div>
+
+           </div>
+
+           <div class="input-field col s12">
+             <%= form.label :city %>
+             <%= form.text_field :city, id: :contact_city %>
+           </div>
+
+           <div class="actions">
+             <%= form.submit %>
+           </div>
+
+          </form>
+
+         </div>
+
+        </div>
+
+     </div>
+
+
+<% end %>

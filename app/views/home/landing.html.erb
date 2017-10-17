@@ -1,0 +1,54 @@
+<%= render 'home/navbar' %>
+    <div class="parallax-container ">
+          <div class="parallax"><img src="/assets/estudandes1.jpg"></div>
+    </div>
+        <!-- 1º quadro -->
+    <div class="  section light-blue darken-3">
+      <div class="row container">
+          <h1 class="header  orange-text center">Está chegando ao Cariri</h1>
+          <h3 class="header  white-text center">REPÚBLICA ESTUDANTIL CARIRI</h3>
+          <h5 class="white-text text-darken-3 lighten-3 center ">Oferecemos apartamentos de excelente qualidade, wifi, água, energia, chuveiro elétrico, lavanderia, sala de estudo, localização privilegiada, área de lazer com piscina e quadra de esportes, descontos em parceiros da empresa.</h5>
+      </div>
+
+    </div>
+        <!-- 1º divisão -->
+    <div class="section  black ">
+
+    </div>
+
+        <!-- 2º quadro -->
+    <div class=" section orange darken-4">
+      <div class="row container">
+
+            <h5 class="grey-text white-text lighten-3 center">A República Estudantil Cariri irá hospedar com o máximo de conforto, estudantes de ambos sexos que virão para região do Cariri. Nosso maior orgulho será oferecer a jovens que moram longe de onde estudam a oportunidade de morarem perto de suas respectivas instituições de ensino.</h5>
+
+
+      </div>
+    </div>
+        <!-- 2º divisão -->
+    <div class="section  black lighten-4 ">
+
+    </div>
+        <!-- 3º quadro -->
+
+    <div class=" section yellow accent-2 accent-2">
+      <div class="row container cenetr">
+          <h2 class="header center black-text">Inscreva-se</h2>
+          <h2  class="black-text text-darken-3 lighten-3 center">E receba mais novidades.</h2>
+          <div class="center">
+            <a class="waves-white btn modal-trigger grey darken-4" href="#modal1">Inscreva-se</a>
+          </div>
+      </div>
+    </div>
+        <!-- 2º imagem -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="/assets/estudantes.jpg"></div>
+    </div>
+
+
+      <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+     <div class="modal-content">
+      <%= render 'form', contact: @contact %>
+     </div>
+    </div>
