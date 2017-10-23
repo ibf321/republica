@@ -1,21 +1,23 @@
 <%= form_with(model: contact, local: true) do |form| %>
+
+
   <div class="field">
-    <%= form.label :Nome %>
+    <%= form.label :name %>
     <%= form.text_field :name, id: :contact_name %>
   </div>
 
   <div class="field">
-    <%= form.label :Email %>
+    <%= form.label :email %>
     <%= form.text_field :email, id: :contact_email %>
   </div>
 
   <div class="field">
-    <%= form.label :Contato %>
+    <%= form.label :phone %>
     <%= form.text_field :phone, id: :contact_phone %>
   </div>
 
   <div class="field">
-    <%= form.label :Cidade %>
+    <%= form.label :city %>
     <%= form.text_field :city, id: :contact_city %>
   </div>
 

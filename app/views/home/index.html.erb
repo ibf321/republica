@@ -1,63 +1,70 @@
 <%= render 'home/navbar' %>
 
-<div class="section no-pad-bot  " id="index-banner">
-  <div class=" container ">
-    <br>
-    <h3 class="header center orange-text ">REPÚBLICA ESTUDANTIL CARIRI</h3>
-    <div class="row center">
-      <h4 class="header col s12 light">Sua casa fora de casa!</h4>
+  <div class="section no-pad-bot  " id="index-banner">
+    <div class=" container ">
       <br>
-
-      <p class="flow-text col s12 light">A República Estudantil Cariri, é uma empresa de moradia para estudantes, público alvo universitários e pré-universitários que migram para região do cariri, através de educação de qualidade.</p>
-
+        <div class="col s2 center">
+          <img src="/assets/sua.png" width="170" > <!-- notice the "circle" class -->
+        </div>
+      <div class="row center">
+        <h4 class="header col s12 light orange-text">Seu Shopping Virtual!</h4>
+        <h4 class="flow-text col s12 blue-text">Onde você poderá oferecer produtos e serviços dentro do nosso site. Você cliente ainda conta com o bônus de anuncio dentro do nosso site.</h4>
+      </div>
     </div>
-    <br>
-
   </div>
-</div>
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="center">
+            <h5 class="light-blue darken-4 white-text"><i class="large material-icons ">gps_fixed</i></h5>
+              <a class="btn modal-trigger orange darken-6" href="#modal1">Missão</a>
+            </div>
 
 
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <div class="center">
+            <h5 class="light-blue darken-4 white-text"><i class="large material-icons">visibility</i></h5>
+              <a class="btn modal-trigger orange darken-6" href="#modal2">Visão</a>
+                </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <div class="center">
+                <h5 class="light-blue darken-4 white-text"><i class="large material-icons">settings</i></h5>
+                <a class="btn modal-trigger orange darken-6" href="#modal3">Valores</a>
 
-<div class="container">
-  <div class="section">
-
-    <!--   Icon Section   -->
-    <div class="row">
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h5 class="center light-blue-text"><i class="large material-icons">gps_fixed</i></h5>
-          <h4 class="center ">Missão</h4>
-          <h5 class="light center " >Fornecer serviços de moradia voltados ao conforto e surpreender constantemente os estudantes com a nossa qualidade fazendo com que eles sempre considerem a república como um lar.</h5>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h5 class="center light-blue-text"><i class="large material-icons">visibility</i></h5>
-          <h4 class="center">Visão</h4>
-
-          <h5 class="light center">Crescer de forma sustentável sendo referência em moradia até 2020, e ser a opção preferencial dos estudantes em até cinco anos.</h5>
-        </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="icon-block">
-          <h5 class="center light-blue-text"><i class="large material-icons">settings</i></h5>
-          <h4 class="center">Valores</h4>
-
-          <h5 class="light center ">Ética / Inovação / Conforto / Segurança / Modernidade / Sustentabilidade / Qualidade no atendimento
-
-          </lu>
-        </h5>
-        </div>
-
-      </div>
-
     </div>
-
   </div>
-  <br><br>
-
-</div>
-
 <%= render 'home/footer' %>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-content">
+<div class="modal-content">
+<%= render 'home/missao' %>
+</div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal2" class="modal modal-content">
+<div class="modal-content">
+<%= render 'home/visao' %>
+</div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal3" class="modal modal-content">
+<div class="modal-content">
+<%= render 'home/valores' %>
+</div>
+</div>

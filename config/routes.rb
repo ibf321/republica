@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
   get 'home/landing'
-
   get 'home/index'
-  root 'home#index'
   post "home/landing"
 
+  root 'home#landing'
   resources :contacts
   resources :homesg
 

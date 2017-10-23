@@ -30,7 +30,7 @@ class ContactsController < ApplicationController
       if @contact.save
         # send email
         ApplicationMailer.signup_confirmation(@contact).deliver
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to @contact, notice: 'Obrigado! Logo recebera um email de confirmação' }
         format.json { render :show, status: :created, location: @contact }
       else
         format.html { render :new }
